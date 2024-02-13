@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+*{
+  font-family: Inter;
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  height: max-content;
+  margin-bottom: auto;
+  background-color: #282D35;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  background-color: #21222A;
+  padding: 2rem 1.5rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+}
+
+.navbar-elem-one {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #61DAFB
+}
+
+.navbar-elem-one > img {
+  width: 50px;
+}
+
+.navbar-elem-two {
   color: white;
+  font-size: 18px;
 }
 
-.App-link {
-  color: #61dafb;
+
+.main-elem {
+  background-color: #282D35;
+  background-image: url("./images/react-logo-dark.png");
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-y: 35%;
+  background-position-x: right;
+  color: white;
+  padding: 2rem;
+  height: max-content;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-elem > h1 {
+  margin: 0;
+  font-size: 39px;
+  letter-spacing: -0.05em;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 39.06px;
+  line-height: 47px;
+  letter-spacing: -0.05em;
+}
+
+.main-elem > ul {
+  margin-top: 46px;
+  margin-left: 4rem;
+}
+
+.main-elem > ul > li {
+  line-height: 19px;
+  padding-block: 10px;
+}
+
+.main-elem > ul > li::marker {
+  color: #61DAFB;
+  font-size: 1.4rem;
 }
